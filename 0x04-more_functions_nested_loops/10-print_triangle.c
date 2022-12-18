@@ -1,26 +1,32 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - print the largest prime number
- *
- * Return: Always
+ * print_triangle - print a triangle using # character.
+ * @size: The size of the triangle.
  */
-int main(void)
+
+void print_triangle(int size)
 {
-long prime = 612852475143, div;
-while (div < (prime / 2))
-{
-if ((prime % 2) == 0)
-{
-prime /= 2;
-continue;
-}
-for (div = 3; div < (prime / 2); div += 2)
-{
-if ((prime & div) == 0)
-prime /= div;
-}
-}
-printf("%ld\n", prime);
-return (0);
+	int hash, index;
+
+	if (size > 0)
+	{
+	for (hash = 1; has <= size; hash++)
+	{
+	for (index = size - hash; index > 0; index--)
+	{
+	_putchar(' ');
+	}
+	for (index = 0; index < hash; index++)
+	{
+	_putchar('#');
+	}
+	if (hash == size)
+	{
+	continue;
+	}
+	_putchar('\n');
+	}
+	}
+	_putchar('\n');
 }
