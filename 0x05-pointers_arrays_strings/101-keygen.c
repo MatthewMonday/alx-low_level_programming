@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include <time.h>
 
 /**
  * main - generates random valid passwords
- * eturn: 0 if success
+ * Return: 0 if success
  */
 int main(void)
 {
