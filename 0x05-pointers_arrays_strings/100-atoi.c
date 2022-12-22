@@ -4,7 +4,7 @@
 /**
  * _atoi - function converts string to an integer
  * @s: pointer parameter
- * Return: return am integer value
+ * Return: returns an integer value
  */
 int _atoi(char *s)
 {
@@ -13,9 +13,11 @@ int _atoi(char *s)
 	while (*(s + count) != '\0')
 	{
 		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
-			bresk;
+			break;
+
 		if (*(s + count) == '-')
 			k *= -1;
+
 		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 		{
 			if (size > 0)
